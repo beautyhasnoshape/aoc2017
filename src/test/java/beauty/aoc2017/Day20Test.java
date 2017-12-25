@@ -67,14 +67,16 @@ public class Day20Test {
     @Test
     public void solvePartBSample() {
         List<String> elements = Arrays.asList(new String[] {
-                "p=< 3,0,0>, v=< 2,0,0>, a=<-1,0,0>",
-                "p=< 4,0,0>, v=< 0,0,0>, a=<-2,0,0>"
+                "p=<-6,0,0>, v=< 3,0,0>, a=< 0,0,0>",
+                "p=<-4,0,0>, v=< 2,0,0>, a=< 0,0,0>",
+                "p=<-2,0,0>, v=< 1,0,0>, a=< 0,0,0>",
+                "p=< 3,0,0>, v=<-1,0,0>, a=< 0,0,0>"
         });
 
         // when
-        int partNo = testObj.solvePartA(elements);
+        int partNo = testObj.solvePartB(elements);
 
         // then
-        assertEquals(-1, partNo);
+        assertEquals(1, partNo);
     }
 }
